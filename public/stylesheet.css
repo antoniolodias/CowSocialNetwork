@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-color: blue;
+    overflow-x: hidden;
+}
+
+body {
+    background: url("/img/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#welcome p,
+#welcomeMessage {
+    position: relative;
+    left: 15px;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+}
+
+#register p,
+.helloMessage,
+.onlineTitle {
+    position: relative;
+    left: 15px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#register input,
+#register button,
+#register .link {
+    position: relative;
+    left: 15px;
+    background-color: transparent;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#header {
+    position: fixed;
+    z-index: 99;
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.linkToUsersPage,
+.linkToFriendsAndFriendRequests,
+.linkToOnline,
+.linkToForum {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    color: white;
+    z-index: 99;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+.linkToFriendsAndFriendRequests {
+    top: 120px;
+}
+.linkToOnline {
+    right: 150px;
+}
+.linkToForum {
+    top: 140px;
+}
+
+.logoutButton {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    color: white;
+}
+#logo {
+    width: 70px;
+    height: 70px;
+    overflow-y: hidden;
+    margin-left: 10px;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+}
+
+#appProfilePic {
+    position: absolute;
+    right: 0;
+
+    width: 70px;
+    height: 70px;
+    overflow-y: hidden;
+    margin-right: 10px;
+}
+#appProfilePic img {
+    width: 100%;
+    height: auto;
+}
+
+#uploader {
+    position: fixed;
+    right: 100px;
+    height: 70px;
+    width: auto;
+}
+
+#BrowserRouter {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#profileProfilePic {
+    position: absolute;
+    display: inline-block;
+    bottom: 20px;
+
+    width: 35%;
+    height: 100%;
+
+    overflow-y: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+#profileProfilePic img {
+    position: relative;
+    bottom: 100px;
+    width: 80%;
+    height: auto;
+    padding-left: 10%;
+}
+
+#bioArea {
+    position: relative;
+    height: 100%;
+    width: 300px;
+    left: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+.writeBioButton {
+    position: relative;
+    left: 15px;
+    background-color: transparent;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.bioText {
+    width: 300px;
+    height: 150px;
+
+    position: relative;
+    left: 15px;
+    background-color: transparent;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#bioEditArea {
+    position: absolute;
+    background-color: white;
+    height: 150px;
+}
+.submitBioTextButton {
+    position: relative;
+    left: 15px;
+    background-color: transparent;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+textarea.bioText {
+    position: relative;
+    left: 15px;
+    background-color: transparent;
+    color: blue;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#wallPosts,
+#forumMessages {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    left: 40%;
+    bottom: 50px;
+}
+
+#forumMessages {
+    top: 100px;
+}
+
+#wallPosts .wallTitle,
+#forumMessages .forumTitle {
+    position: relative;
+    left: 35%;
+    bottom: 28px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#wallPosts button,
+#forumMessages button {
+    position: relative;
+    left: 2%;
+    bottom: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.wallTextArea,
+#forumMessages .forumTextArea {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 80%;
+    height: 50px;
+    left: 5%;
+    bottom: 20px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.eachPost,
+.eachMessage {
+    height: 50%;
+}
+
+.eachPost img,
+.eachMessage img {
+    position: relative;
+    left: 1%;
+    width: 50px;
+    height: 100%;
+}
+
+#eachPost #wallUsersPictures img {
+    position: relative;
+    left: 1%;
+    width: 50px;
+    height: 100%;
+    border: yellow 1px solid;
+}
+
+.eachPost p,
+.eachMessage p {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    left: 11.5%;
+    bottom: 50px;
+    width: 80%;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.eachMessage span {
+    font-size: 12px;
+}
+
+.otherUserPicture {
+    width: 300px;
+    height: auto;
+}
+
+.allUsersList {
+    position: relative;
+    top: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.eachUserName,
+#friends button,
+#wannabes button {
+    position: relative;
+    left: 30px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.FriendshipButton {
+    position: absolute;
+    top: 600px;
+    left: 15px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#friends button {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+}
+
+.eachUserName a {
+    text-decoration: none;
+}
+
+.eachUser {
+    width: 200px;
+}
+
+.eachUser img {
+    width: 100%;
+}
+#friends,
+#wannabes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+#wannabes {
+    position: absolute;
+    top: 20px;
+    bottom: 250px;
+}
+
+.myFriends,
+.myWannabeFriends {
+    position: relative;
+    left: 15px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 25px;
+}
+.myWannabeFriends {
+    margin-bottom: 250px;
+}
+
+.eachUserOnline {
+    width: 200px;
+
+    border: green 2px solid;
+}
+.eachUserOnline img {
+    width: 100%;
+}
+
+button {
+    z-index: 999999;
+}

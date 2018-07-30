@@ -11,4 +11,3 @@ Javascript, React, Redux, Node.js, Express.js, Socket.io, PostgreSQL, HTML, CSS.
 (It might take a minute to load)
 
 ![Alt Text](https://pli.io/YZyZZ.gif)
-![Alt Text](https://pli.io/YZJGw.gif)
